@@ -11,6 +11,19 @@
     <h1>Task Manager</h1>
     <div class="task-input">
       <input type="text" id="task" placeholder="Add a new task">
+      <select id="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <select id="assignee">
+        <option value="todos">Todos</option>
+        <option value="Jorginho">Jorginho</option>
+        <option value="fabio">Fabio</option>
+        <option value="Rafael">Rafael</option>
+        <option value="caique">Caique</option>
+      </select>
+      <input type="date" id="deadline">
       <button onclick="addTask()">Add Task</button>
     </div>
     <ul id="task-list"></ul>
@@ -19,4 +32,5 @@
   <script type="module" src="script.js"></script>
 </body>
 </html>
+
 

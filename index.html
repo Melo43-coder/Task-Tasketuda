@@ -8,25 +8,29 @@
 </head>
 <body>
   <div class="container">
-    <h1>Task Manager</h1>
+    <h1>Dorinha Tarefas</h1>
     <div class="task-input">
-      <input type="text" id="task" placeholder="Add a new task">
+      <input type="text" id="task" placeholder="Descreva a sua Tarefa">
       <select id="priority">
-        <option value="low">Low</option>
-        <option value="medium">Medium</option>
-        <option value="high">High</option>
+        <option value="low">Baixa Prioridade</option>
+        <option value="medium">Media Prioridade</option>
+        <option value="high">Autissima Prioridade</option>
       </select>
       <select id="assignee">
-        <option value="todos">Todos</option>
-        <option value="Jorginho">Jorginho</option>
+        <option value="all">Todos</option>
+        <option value="jorginho">Jorginho</option>
         <option value="fabio">Fabio</option>
-        <option value="Rafael">Rafael</option>
+        <option value="rafael">Rafael</option>
         <option value="caique">Caique</option>
+        <option value="helen">Helen</option>
       </select>
-      <input type="date" id="deadline">
-      <button onclick="addTask()">Add Task</button>
+      <input type="date" id="due-date">
+      <input type="text" id="creator" placeholder="Criador Da tarefa">
+      <button onclick="addTask()">Adicionar Tarefa</button>
     </div>
-    <ul id="task-list"></ul>
+    <div class="task-list">
+      <ul id="task-list"></ul>
+    </div>
   </div>
   <script type="module" src="firebase-config.js"></script>
   <script type="module" src="script.js"></script>
